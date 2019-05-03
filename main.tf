@@ -8,7 +8,7 @@
 // Modules
 module "vm" {
   source  = "app.terraform.io/bleehashiorg/vm/azure"
-  version = "0.0.1"
+  version = "0.0.2"
 
   network_interface_id = "${module.vpc.network_interface_id}"
   resource_group_name = "${module.vpc.resource_group_name}"
@@ -18,5 +18,5 @@ module "vpc" {
   source  = "app.terraform.io/bleehashiorg/vpc/azure"
   version = "0.0.4"
 
-  resource_group_name = "myrg"
+  resource_group_name = "myrg2"
 }
