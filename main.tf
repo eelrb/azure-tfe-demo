@@ -11,6 +11,7 @@ module "vm" {
   version = "0.0.2"
 
   network_interface_id = "${module.vpc.network_interface_id}"
+  vmsize="Standard_DS2_v2"
   resource_group_name = "${module.vpc.resource_group_name}"
 }
 
